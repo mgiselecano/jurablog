@@ -1,0 +1,52 @@
+</head>
+
+<body>
+  
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Blog Jura<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+     
+     
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href= "{% url "Inicio" %}" class="active">Inicio</a></li>
+          <li><a href= "{% url "Articulos" %}" >Articulos</a></li>
+          <li><a href= "{% url "Nuevo_post" %}">Publicar</a></li>
+          <li><a href="{% url "Nuevo_autor" %}">Autores</a></li>
+          <li><a href="{% url "Buscar_post" %}">Buscar Post</a></li>
+          <li><a href="{% url "Buscar_autor" %}">Buscar Autor</a></li>      
+          <li class="dropdown"><a href="#"><span>Temas</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Derecho empresario </a></li>
+              <li class="dropdown"><a href="#"><span>Blockchain</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">DAOS</a></li>
+                  <li><a href="#">Tokenizaciónd de activos</a></li>
+                  <li><a href="#">Smart Contracts</a></li>
+                  <li><a href="#">Firma digital</a></li>
+                  <li><a href="#">Programación para abogados</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Legal Design</a></li>
+              <li><a href="#">Inteligencia artificial</a></li>
+              <li><a href="#">Sociedades</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url "Contacto" %}">Contacto</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
